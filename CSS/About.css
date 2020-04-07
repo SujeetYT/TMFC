@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Sacramento&display=swap');
+/* font-family: 'Great Vibes', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth !important;
+}
+/* ---------------We just customized the scrollbar for only chrome browser--------- */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: linear-gradient(#0059ff,#ff0077);
+    box-shadow: inset 0 0 6px #fff;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0059ff, #00ffff);
+    outline: 5px solid #00aeff;
+    border-radius: 50px;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #169176;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header a.home{
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: 500;
+    
+}
+header a.home:hover{
+    color: black;
+    font-weight: 500;
+    background-color: white;  
+}
+header h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fada3e;
+    position: absolute;
+    top: 10px;
+}
+body>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background: linear-gradient(#000000a1, #000000a1), url('../images/About/AboutBG.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.story{
+    width: 90%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.story h1{   
+    color: #d37d1b;
+    font-family: 'Great Vibes', cursive;
+    position: relative;
+    top: -60px;
+}
+.story>h4{
+    color: #dbdbdb;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: -60px;
+}
+.about{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+.about>h2{  
+    color: #d37d1b;
+    font-family: 'Great Vibes', cursive;
+    position: relative;
+    top: 20px;
+}
+.about>h3{
+    color: #dfdfdf;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 30px;
+}
+.about>h4{
+    color: #dfdfdf;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+.about>p{
+    color: #dfdfdf;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+/* ------------------------------------Footer------------------------------- */
+footer#foot{
+    height: 500px;
+    background-color: #2c2c2c;
+    width: 100%;
+    padding: 0px 20px;
+    height: auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thanks{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    align-items: center;
+    line-height: 35px;
+    margin: 10px 0;
+}
+footer .thanks h1{
+    color: #969696;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 2px;
+    border-bottom: 1px solid #4b4a4a;  
+}
+footer .thanks p{
+    color: #969696;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+footer .thanks h2{
+    color: #969696;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.links{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .links .foot-nav{
+    position: relative;
+    float: left;
+}
+footer .links .foot-nav ul{
+    list-style: none;
+    margin: 0px;
+}
+footer .links .foot-nav ul li{
+    margin-top: 15px;
+}
+footer .links .foot-nav ul li a{
+    text-decoration: none;
+    color: #969696;
+}
+footer .links .location{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 280px;
+    margin: 5px;
+}
+footer .links .location img{
+    position: absolute;
+    max-width: 100%;
+    top: 10px;
+    /* padding: 20px; */
+}
+footer .location p{
+    position: absolute;
+    top: 140px;
+    left: 35px;
+    color: #d4d4d4;
+    text-align: center;
+}
+footer .location p span{
+    color: #ffce47;
+}
+.cpr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+footer .cpr p{
+    position: relative;
+    font-size: small;
+    margin: 5px;
+    color: #d4d4d4;
+}
+footer .cpr a{
+    position: relative;
+
+    color: #ffbb00;
+    text-decoration: none;
+    border: 2px solid #ff9900;
+    border-radius: 50px;
+    padding: 5px 7px;
+}
+/* --------------------------FontAwesome Social media handles------------------------------- */
+footer .social{
+    position: relative;
+    padding: 25px;
+    width: 103px;
+    height: 280px;
+    margin: 5px; 
+}
+footer .social .fa {
+    padding: 15px;
+    margin: 2px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* LinkedIn */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

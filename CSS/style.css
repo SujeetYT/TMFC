@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+/* font-family: 'Roboto Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Sacramento&display=swap');
+/* font-family: 'Dancing Script', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Sacramento', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ---------------We just customized the scrollbar for only chrome browser--------- */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: linear-gradient(#0059ff,#ff0077);
+    box-shadow: inset 0 0 6px #fff;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0059ff, #00ffff);
+    outline: 5px solid #00aeff;
+    border-radius: 50px;
+}
+
+/* -----------------------Loader------------------------------------ */
+#loading{
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../images/Loading.gif') no-repeat center;
+    z-index: 60;
+}
+
+/* X------------------------Creating the parallax effect------------------------X */
+.parallax1{
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.table{
+    /* ----------setting the specific height---------- */
+    height: 100vh;
+    width: 100%;
+    /* ----------using image---------- */
+    background-image: url('../images/wooden-plank.jpg');
+    /* ----------Creating the parallax effect---------- */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.tray{
+    /* ----------setting the specific height---------- */
+    height: 100vh;
+    width: 100%;
+    /* ----------using image---------- */
+    background-image: url('../images/tray.png');
+    /* -----X------Dropping Shadow--------X------------ */
+    filter: drop-shadow(-5px 5px 10px black); 
+    /* ----------Creating the parallax effect---------- */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    animation-name: motion-tray;
+    animation-duration: 2s;
+}
+@keyframes motion-tray{
+    from{transform: translateY(60px); opacity: 0;}   /* ----------Starting position---------- */
+    to{transform: translateY(0); opacity: 1;}    /* ----------Normal position---------- */ 
+}
+/* Hello Foodies */
+.salutation{
+    position: relative;
+    top: 300px; 
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-self: start;
+}
+.parallax1 p{
+    position: absolute;
+    left: 20%;   
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    animation-name: toRight;
+    animation-duration: 2s;   
+    animation-delay: 0.6s;
+} 
+@keyframes toRight{
+    /* ----------Starting position---------- */
+    from{transform: translateX(-100px); opacity: 0;} 
+    /* ----------Normal position---------- */ 
+    to{transform: translateX(0); opacity: 1;}
+} 
+.parallax1 h3 a{
+    position: absolute;
+    top: 70px;
+    left: 35%;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #d8d8d8;
+    border-radius: 50px;
+    padding: 5px 10px;
+    animation: ease-in;
+    animation-name: learnMore;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+} 
+@keyframes learnMore{
+    from{transform: translateY(-30px); opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}
+.parallax1 h3 a:hover{
+    color: #353535;
+    background-color: #d8d8d8;
+    transition: .5s;
+}
+
+/* ---------------------------Section-2 Starts here-------------------------- */
+#section2{
+    min-height: 500px; 
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #00b7ff, #ff0077);
+}
+#section2 .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    width: 80%;
+    height: auto;  
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    animation-name: job; 
+    animation-duration: 2s;
+}
+@keyframes job{
+    from{transform: translateX(-100px); opacity: 0;}
+    to{transform: translateX(0); opacity: 1;}
+}
+@keyframes row{
+    from{transform: translateX(300px); opacity: 0;}
+    to{transform: translateX(0); opacity: 1;}
+}  
+#section2 .do{
+    position: relative;
+    border-bottom: 3px solid #ff0077;
+    width: 280px;
+    height: 50px;
+}
+#section2 h1{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+#section2 p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px; 
+}
+
+/* ---------------------------Parallax-2 Starts here-------------------------- */
+.parallax2{
+    /* ----------using image---------- */
+    background-image: linear-gradient(225deg, #ad006bbb, #006d80ce), url('../images/land2.jpg');
+    /* ----------setting the specific height---------- */
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    /* ----------Creating the parallax effect---------- */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+/* ---------------X------------------section-3------------------------X----------- */
+#section3{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+#section3 h1{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 0px;
+    left: 50px;
+    width: 40%;
+    height: 65px;
+    letter-spacing: 3px;
+    font-size: 50px;
+    animation-name: OurStory;
+    animation-duration: 1.5s;
+}
+@keyframes OurStory{
+    from{transform: translateX(250px); opacity: 0;}
+    to{transform: translateX(0); opacity: 1;}
+}
+#section3 .story{
+    position: relative;
+    top: 0px;
+    width: 50%;
+    height: 280px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid #fde825;
+    z-index: 2;
+    animation-name: Story;
+    animation-duration: 1.5s;
+}
+@keyframes Story{
+    from{transform: translateX(-250px); opacity: 0;}
+    to{transform: translateX(0); opacity: 1;}
+}
+#section3 h3{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    font-size: 25px;
+}
+#section3 .story p{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px 5px;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 95%;
+}
+
+/* ---------------X------------------section-4------------------------X------- */
+#section4{
+    min-height: 700px; 
+    background: linear-gradient(45deg, #41289c, #00afe4);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section4 .credit{
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #ff0080;
+    width: 180px;
+    height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #e6e6e6;
+}
+#section4 .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    position: relative;
+    top: 50px;
+}
+/* -----------Making Card for Sujeet Kumar--------------------------- */
+
+.sujeet .card-container{
+    width: 260px;
+    height: 430px;
+    background: linear-gradient(#2900be, #00afe4); 
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 1px 20px 3px #00000088;
+    overflow: hidden;
+}
+.sujeet .upper-container{
+    height: 280px;
+    background: linear-gradient(90deg, #ad00d8, #ff008c);
+    clip-path: circle(55% at 43% 0);
+}
+.sujeet .image-container{
+    position: relative;
+    top: -230px;
+}
+.sujeet .image-container img{
+    clip-path: circle(40% at 50% 50%);
+    position: absolute;
+    top: -18px;
+    left: 25%;
+}
+.sujeet .lower-container{
+    height: 280px;
+    background: linear-gradient(-90deg, #ad00d8, #ff008c);
+    clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
+}
+.sujeet .card-container h2{
+    position: absolute;
+    top: 200px;
+    left: 63px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+.sujeet .card-container h4{
+    position: absolute;
+    top: 245px;
+    left: 51px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+.sujeet .card-container p{
+    position: absolute;
+    padding: 2px 3px;
+    top: 280px;
+    left: 40px;
+    right: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+/* -----------Making Card for Prabhat--------------------------- */
+.prabhat .card-container{
+    width: 260px;
+    height: 430px;
+    background: linear-gradient(#2900be, #00afe4); 
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 1px 20px 3px #00000088;
+    overflow: hidden;
+}
+.prabhat .upper-container{
+    height: 280px;
+    background: linear-gradient(90deg, #ad00d8, #ff008c);
+    clip-path: circle(55% at 43% 0);
+}
+.prabhat .image-container{
+    position: relative;
+    top: -230px;
+}
+.prabhat .image-container img{
+    clip-path: circle(45% at 50% 50%);
+    position: absolute;
+    top: 5px;
+    left: 70px;
+    border: 5px solid #fff;
+}
+.prabhat .lower-container{
+    height: 280px;
+    background: linear-gradient(-90deg, #ad00d8, #ff008c);
+    clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
+}
+.prabhat .card-container h2{
+    position: absolute;
+    top: 200px;
+    left: 63px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+.prabhat .card-container h4{
+    position: absolute;
+    top: 245px;
+    left: 89px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+.prabhat .card-container p{
+    position: absolute;
+    padding: 2px 3px;
+    top: 280px;
+    left: 40px;
+    right: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+/* ---------------------------Parallax-3 Starts here-------------------------- */
+.parallax3{
+    /* ----------using image---------- */
+    background-image: linear-gradient(220deg, #0099ff91, #00ff6a9f), url('../images/land3.jpg');
+    /* ----------setting the specific height---------- */
+    min-height: 600px;
+    /* ----------Creating the parallax effect---------- */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+/* ---------------X------------------section-5------------------------X------- */
+#section5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#section5 h1{
+    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    position: absolute;
+    top: 190px;
+    left: 5%;
+}
+#section5 p{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 250px;
+    left: 7%;    
+    width: 350px;
+}
+    /* ===============Here we are creatin the image slider====================== */
+.outerBox{
+    position: relative;
+    top: 0px;
+    left: 175px;
+    width: 60%;
+    overflow: hidden;
+    clip-path: polygon(27% 0, 100% 0%, 100% 100%, 0 100%);
+}
+.sliderBox{
+    position: relative;
+    width: 2560px;
+    animation-name: slides;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.sliderBox img{
+    float: left;
+}
+@keyframes slides{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    25%{left: -640px;}
+    45%{left: -640px;}
+    50%{left: -1280px;}
+    70%{left: -1280px;}
+    75%{left: -1920px;}
+    95%{left: -1920px;}
+    100%{left: 0px;}
+}
+    
+/* ---------------X------------------section-6------------------------X------- */
+#section6{
+    background-color: #f2f2f2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section6 h1{
+    color: #d37d1b;
+    position: absolute;
+    top: 20px;
+    letter-spacing: 2px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+}
+#section6 h3{
+    position: absolute;
+    top: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+}
+#section6 form {
+    background-color: #f2f2f2;
+    max-width: 500px;
+    position: absolute;
+    top: 90px;
+}
+
+#section6 form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#section6 form input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#section6 form input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#section6 form input[type=submit] {
+    width: 100%;
+    background: linear-gradient(90deg, #ad00d8, #ff008c);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#section6 form input[type=submit]:hover {
+    background: linear-gradient(90deg, #9300b8, #dd007a);
+}
+
+
+/* X--------------------------------Nav Bar----------------------------------------X */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 20;
+    justify-content: space-between;
+    transition: 0.6s;
+    padding: 40px 50px; 
+}
+header.sticky{
+    padding: 12px 50px;
+    background: #c9c9c9;
+    opacity: 0.9;
+    z-index: 21;
+}
+header .logo{
+    position: relative;
+    float: left;
+}
+header .logo img{
+    transition: 0.6s;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.6s;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    font-size: 0.9em;
+}
+/* -------Creating Sub menu------------ */
+header ul li .sub-menu{
+    display: none;
+    position: absolute;
+    background: #fff;
+    opacity: 0.9;
+    min-width: 150px;
+    z-index: 3;
+    border-radius: 10px;
+}
+header ul li .sub-menu li{
+    padding: 15px 0;
+}
+header ul li .sub-menu li a{
+    color: #000;
+    text-decoration: none;
+}
+header ul li.drop:hover .sub-menu{
+    display: block;
+    color: #000;
+}
+/* -------This is for underline hover effect for sub-menu------------- */
+header ul li .sub-menu li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    text-decoration: none;
+}
+header ul li .sub-menu li:hover::after{
+    width: 100%;       
+    transition: .3s;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+/* -------This is for underline hover effect------------- */
+header.sticky .menu::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+header.sticky .menu:hover::after{
+    width: 100%;       
+    transition: .3s;
+}
+/* --------Till now only for sticky nav---------- */
+.menu::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+.menu:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+/* ----------Tillnow for normal header nav--------------------- */
+
+/* ------------------Setting @media query for responsiveness---------------- */
+
+
+
+/* ------------------------------------Footer------------------------------- */
+footer#foot{
+    height: 500px;
+    background-color: #2c2c2c;
+    width: 100%;
+    padding: 0px 20px;
+    height: auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thanks{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    align-items: center;
+    line-height: 35px;
+    margin: 10px 0;
+}
+footer .thanks h1{
+    color: #969696;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 2px;
+    border-bottom: 1px solid #4b4a4a;  
+}
+footer .thanks p{
+    color: #969696;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+footer .thanks h2{
+    color: #969696;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.links{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .links .foot-nav{
+    position: relative;
+    float: left;
+}
+footer .links .foot-nav ul{
+    list-style: none;
+    margin: 0px;
+}
+footer .links .foot-nav ul li{
+    margin-top: 15px;
+}
+footer .links .foot-nav ul li a{
+    text-decoration: none;
+    color: #969696;
+}
+footer .links .location{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 280px;
+    margin: 5px;
+}
+footer .links .location img{
+    position: absolute;
+    max-width: 100%;
+    top: 10px;
+    padding: 20px;
+}
+footer .location p{
+    position: absolute;
+    top: 140px;
+    left: 35px;
+    color: #d4d4d4;
+    text-align: center;
+}
+footer .location p span{
+    color: #ffce47;
+}
+.cpr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+footer .cpr p{
+    position: relative;
+    font-size: small;
+    margin: 5px;
+    color: #d4d4d4;
+}
+footer .cpr a{
+    position: relative;
+
+    color: #ffbb00;
+    text-decoration: none;
+    border: 2px solid #ff9900;
+    border-radius: 50px;
+    padding: 5px 7px;
+}
+/* --------------------------FontAwesome Social media handles------------------------------- */
+footer .social{
+    position: relative;
+    padding: 25px;
+    width: 103px;
+    height: 280px;
+    margin: 5px; 
+}
+footer .social .fa {
+    padding: 15px;
+    margin: 2px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* LinkedIn */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

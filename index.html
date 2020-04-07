@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMFC</title>
+  <!-- added a favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Adding icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<!--visivility set to visible when web content is completely loaded using loadFunction()-->
+<body onload="loadFunction()">
+  <!---------------------------------- Loading Effect------------------------->
+  <div id="loading"></div>
+  <!-- ------------------------Script For Loader------------------------ -->
+  <!-- If loader is not working then put this loader script beneath the footer tag -->
+  <script src="JavaScript/Loading.js"></script> 
+
+  <!-------------------------- Parallax effect-1 -------------------------------->
+  <div class="parallax1" id="section1">
+    <div class="background1">
+      <div class="table"></div>
+      <div class="tray"></div>
+    </div>
+    <div class="salutation">
+      <p>Hello Foodies !!!</p>
+      <h3><a href="#section2">Learn more</a></h3>
+    </div>
+
+    <!-------------------- Created NavBar---------------------->
+    <header>
+      <div href="#" class="logo">
+        <img src="images/5.png" width="40%" alt="">
+      </div>
+      <ul>
+        <li class="menu"><a href="#section1" id="active">Home</a></li>
+        <li class="drop">
+          <a href="#">Menu</a>
+          <ul class="sub-menu">
+            <li><a href="Web pages/Indian.html">Indian</a></li>
+            <li><a href="Web pages/Italian.html">Italian</a></li>
+            <li><a href="Web pages/SeaFood.html">Sea Food</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="Web pages/About.html">About</a></li>
+        <li class="menu"><a href="#section6">RESERVATIONS</a></li>
+        <li class="menu"><a href="#foot">Contact</a></li>
+        <li class="menu"><a href="Web pages/Signup.html" target="_blank">Login/Signup</a></li>
+      </ul>     
+    </header>
+    
+    <!-- Here using JavaScript for animated sticky nav-bar-->
+    <script type="text/javascript" src="JavaScript/stickyNav.js"></script>
+  </div>
+
+  <!----------------------------- Section-2 ------------------------------>
+  <div id="section2"> 
+    <!-- <hr style="position: relative; top: 435px; border: none; height: 1px; background: #ff0000;">    -->
+    <div class="content">
+      <div class="do">
+        <h1>What do we do?</h1>
+      </div>
+      <!-- <hr style="position: absolute; top: 35px; left: 550px; border: none; height: 3px; width: 20%; background-color: #ff0095d8; animation-name: row; animation-duration: 2s;"> -->
+      <p>Lorem ipsum dolor sit, amet consectetuadipisicing elit. Recusandae harum itaque enicorrupti  illo aliquid, ipsam adipisci quo delectuhic eum dicta, praesentium amet facilis quasprovident  id! Commodi, placeat? Lorem ipsum dolosit amet consectetur adipisicing elit. Natususcipit ipsa   laudantium nesciunt quas cupiditateexcepturi illo libero ab similique, tempora sapientamet id   delectus obcaecati vel sed? Iureperferendis.</p>
+    </div>
+  </div>
+
+  <!-------------------------- Parallax effect-2 ------------------------------>
+  <!------------------------------ Section-3 --------------------------------->
+  <div class="parallax2" id="section3">
+    <h1>Our story</h1>
+    <div class="story">
+      <h3>LOVE FOR FOOD</h3>
+      <p>Welcome. This is "The Marvellous Food Company". Elegant & sophisticated restaurant. "The Marvellous Food Company" offers different home page layouts with smart and unique design, showcasing beautifully designed elements every restaurant website should have. Smooth animations, fast loading and engaging user experience are just some of the features this  offer. <br><br>
+      So, give it a try and dive into a world of "The Marvellous Food Company" restaurant websites.</p>
+    </div>
+  </div>
+
+  <!------------------------------ Section-4 --------------------------------->
+  <div id="section4">
+    <div class="credit">
+      <h2>Credits :</h2>
+    </div>
+    <!-- <hr style="position: absolute; top: 55px; left: 530px; border: none; height: 3px; width: 20%; background-color: #ff0095d8; animation-name: row; animation-duration: 2s;"> -->
+    <div class="card">
+      <div class="sujeet">
+        <div class="card-container">
+          <div class="upper-container"></div>
+          <div class="image-container">
+            <img src="images/Sujeet1.jpg" width="50%"alt="profile">
+          </div>
+          <div class="name"><h2>Sujeet Kumar</h2></div>
+          <hr style="position: relative; top: -50px; left: 59px; border: none; height: 1px; width: 60%; background-color: #fff;">
+          <h4>UI/UX | Front-end Developer</h4>
+          <p>Contributed in the development of the multiple web-pages and Decoration of user interface</p>
+          <div class="lower-container"></div>
+        </div>
+      </div>
+      <div class="prabhat">
+        <div class="card-container">
+          <div class="upper-container"></div>
+          <div class="image-container">
+            <img src="images/Prabhat1.jpeg" width="50%"alt="profile">
+          </div>
+          <div class="name"><h2>Prabhat Shaw</h2></div>
+          <h4>Web Developer</h4>
+          <p>Contributed in the development of the multiple web-pages and Decoration of user interface</p>
+          <div class="lower-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------- Parallax effect-3 ----------------------------->
+  <!------------------------------ Section-5 ---------------------------------->
+  <div class="parallax3" id="section5">
+    <!--X-------------------- Here we are creating the image slider ------------X-->
+    <div class="memory">
+      <h1>We create great memories</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, libero harum praesentium beatae earum illum tenetur ullam sequi nemo? Ullam autem, vitae repellendus laboriosam hic rerum harum nostrum et doloribus?</p> 
+    </div>
+    <div class="outerBox">
+      <div class="sliderBox">
+          <img src="images/1.jpg" height="360px" width="640px">
+          <img src="images/2.jpg" height="360px" width="640px">
+          <img src="images/3.jpg" height="360px" width="640px">
+          <img src="images/4.jpg" height="360px" width="640px">
+      </div>
+    </div>
+    
+  </div>  
+
+  <!------------------------------ Section-6 ---------------------------------->
+  <div style="height: 500px;" id="section6">
+    <h1>Reservation</h1>
+    <h3>BOOK YOUR TABLE</h3>
+    <form>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">        
+      <input type="date" id="date" name="date">
+      <input type="email" id="email" name="Email" placeholder="Email..">       
+      <select id="people" name="people">
+        <option value="1">1 People</option>
+        <option value="2">2 People</option>
+        <option value="3">3 People</option>
+        <option value="4">4 People</option>
+        <option value="5">5 People</option>
+      </select>
+      <select id="time" name="time">
+        <option value="6">6:00 PM</option>
+        <option value="7">7:00 PM</option>
+        <option value="8">8:00 PM</option>
+        <option value="9">9:00 PM</option>
+        <option value="10">10:00 PM</option>
+      </select>      
+      <input type="submit" value="FIND A TABLE">
+    </form>
+
+  </div>
+
+  <!------------------------------ Footer -------------------------------------->
+  <footer id="foot">
+    <div class="thanks">
+      <h1>Thank You</h1>
+      <p>Enjoyed your stay at The Marvellous Food Company? Share your moments with us. Follow us on Instagram and use</p>
+      <h2>#TMFC_MOMENTS</h2>
+    </div>
+    <div class="links">
+      <div class="foot-nav">
+        <ul>
+          <li><a href="#section1" id="active">Home</a></li>
+          <li><a href="#section3">Menu</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="../Web pages/Signup.html">Login/Signup</a></li>
+        </ul>
+      </div>
+      <div class="location">
+        <img src="images/5.png" width="270px" alt="logo">
+        <p><span>RESERVATIONS NUMBER:</span>  +91 7982 422 191 <br>
+        <span>WORKING HOURS:</span><br>
+        MON- FRI: 08:00 AM - 10:00 PM <br>
+        SAT - SUN: 10:00 AM - 11:00 PM</p>
+      </div>
+      <!-- Adding font awesome icons -->
+      <div class="social">
+        <a href="https://www.facebook.com/prabhat.shaw.31?fref=hovercard&hc_location=chat" target="_blank" class="fa fa-facebook"></a><br>
+        <a href="https://twitter.com/TechnoSujeet" target="_blank" class="fa fa-twitter"></a><br>
+        <a href="https://www.linkedin.com/in/sujeet-kumar-27028b194" target="_blank" class="fa fa-linkedin"></a><br>
+        <a href="https://www.instagram.com/shabdshaw/" target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
+    <hr style="width: 100%; border: none; height: 1px; background: #4b4a4a;">
+    <div class="cpr">
+      <p>© The Marvellous Food Company 2020. All rights reserved </p>
+      <a href="#section1">Back to top</a>
+
+    </div>
+    <div class="toTop">
+    </div>
+  </footer>
+  
+</body>
+</html>
+
