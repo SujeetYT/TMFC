@@ -25,7 +25,6 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(#0059ff, #00ffff);
-    outline: 5px solid #00aeff;
     border-radius: 50px;
 }
 
